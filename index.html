@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayZone - Ultimate Gaming Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">🎮 PlayZone</div>
+    <div class="nav-links">
+      <a href="#games" class="nav-link">Games</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line">Welcome to</span>
+        <span class="title-highlight">PlayZone</span>
+      </h1>
+      <p class="hero-subtitle">The Ultimate Gaming Experience Awaits You</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Games</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Fun</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Cost</span>
+        </div>
+      </div>
+      <a href="#games" class="cta-button">
+        <span class="cta-text">Start Playing</span>
+        <span class="cta-arrow">→</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Games Section -->
+  <section id="games" class="games-section">
+    <div class="section-header">
+      <h2 class="section-title">Choose Your Adventure</h2>
+      <p class="section-subtitle">Pick a game and let the fun begin!</p>
+    </div>
+    
+    <div class="game-container">
+      <div class="game-card snake-card" data-game="snake">
+        <div class="card-background">
+          <div class="card-pattern snake-pattern"></div>
+        </div>
+        <div class="card-content">
+          <div class="game-icon">🐍</div>
+          <h3 class="game-title">Snake Game</h3>
+          <p class="game-description">Classic arcade action - eat, grow, survive!</p>
+          <div class="game-stats">
+            <span class="difficulty easy">Easy</span>
+            <span class="players">1 Player</span>
+          </div>
+          <a href="Snake-Game/index.html" class="play-button">
+            <span class="play-text">Play Now</span>
+            <span class="play-icon">🎮</span>
+          </a>
+        </div>
+        <div class="card-glow snake-glow"></div>
+      </div>
+
+      <div class="game-card tictactoe-card" data-game="tictactoe">
+        <div class="card-background">
+          <div class="card-pattern tictactoe-pattern"></div>
+        </div>
+        <div class="card-content">
+          <div class="game-icon">⭕</div>
+          <h3 class="game-title">Tic Tac Toe</h3>
+          <p class="game-description">Strategic battle of X's and O's!</p>
+          <div class="game-stats">
+            <span class="difficulty easy">Easy</span>
+            <span class="players">2 Players</span>
+          </div>
+          <a href="Tic-Tac-Toe/index.html" class="play-button">
+            <span class="play-text">Play Now</span>
+            <span class="play-icon">🎯</span>
+          </a>
+        </div>
+        <div class="card-glow tictactoe-glow"></div>
+      </div>
+
+      <div class="game-card rps-card" data-game="rps">
+        <div class="card-background">
+          <div class="card-pattern rps-pattern"></div>
+        </div>
+        <div class="card-content">
+          <div class="game-icon">✂️</div>
+          <h3 class="game-title">Rock Paper Scissors</h3>
+          <p class="game-description">Classic hand game vs computer!</p>
+          <div class="game-stats">
+            <span class="difficulty medium">Medium</span>
+            <span class="players">vs AI</span>
+          </div>
+          <a href="Rock-Paper-Scissors/index.html" class="play-button">
+            <span class="play-text">Play Now</span>
+            <span class="play-icon">👊</span>
+          </a>
+        </div>
+        <div class="card-glow rps-glow"></div>
+      </div>
+
+      <div class="game-card simon-card" data-game="simon">
+        <div class="card-background">
+          <div class="card-pattern simon-pattern"></div>
+        </div>
+        <div class="card-content">
+          <div class="game-icon">🔴</div>
+          <h3 class="game-title">Simon Says</h3>
+          <p class="game-description">Memory challenge - follow the pattern!</p>
+          <div class="game-stats">
+            <span class="difficulty hard">Hard</span>
+            <span class="players">Memory</span>
+          </div>
+          <a href="Simon-Says/index.html" class="play-button">
+            <span class="play-text">Play Now</span>
+            <span class="play-icon">🧠</span>
+          </a>
+        </div>
+        <div class="card-glow simon-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>🎮 PlayZone</h3>
+        <p>Where gaming dreams come alive</p>
+      </div>
+      <div class="footer-links">
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 PlayZone. Made with ❤️ for gamers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
