@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <h1 class="title">Simon Says</h1>
+            <div class="game-info">
+                <div class="info-item">
+                    <span class="info-label">Level</span>
+                    <span class="info-value" id="level">1</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Score</span>
+                    <span class="info-value" id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Best</span>
+                    <span class="info-value" id="bestScore">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <div class="status-display">
+                <div class="status-message" id="statusMessage">Press START to begin!</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <div class="simon-board">
+                <div class="simon-button red" data-color="red" id="redButton">
+                    <div class="button-inner">
+                        <span class="button-number">1</span>
+                    </div>
+                </div>
+                <div class="simon-button blue" data-color="blue" id="blueButton">
+                    <div class="button-inner">
+                        <span class="button-number">2</span>
+                    </div>
+                </div>
+                <div class="simon-button yellow" data-color="yellow" id="yellowButton">
+                    <div class="button-inner">
+                        <span class="button-number">3</span>
+                    </div>
+                </div>
+                <div class="simon-button green" data-color="green" id="greenButton">
+                    <div class="button-inner">
+                        <span class="button-number">4</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button class="control-btn start-btn" id="startBtn">
+                    <span class="btn-icon">▶️</span>
+                    <span class="btn-text">START</span>
+                </button>
+                <button class="control-btn reset-btn" id="resetBtn">
+                    <span class="btn-icon">🔄</span>
+                    <span class="btn-text">RESET</span>
+                </button>
+                <button class="control-btn help-btn" id="helpBtn">
+                    <span class="btn-icon">❓</span>
+                    <span class="btn-text">HELP</span>
+                </button>
+            </div>
+
+            <div class="difficulty-selector">
+                <label class="difficulty-label">Difficulty:</label>
+                <select class="difficulty-select" id="difficultySelect">
+                    <option value="easy">Easy (1.5s)</option>
+                    <option value="medium" selected>Medium (1s)</option>
+                    <option value="hard">Hard (0.7s)</option>
+                    <option value="expert">Expert (0.5s)</option>
+                </select>
+            </div>
+        </main>
+
+        <!-- Help Modal -->
+        <div class="modal-overlay" id="helpModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>How to Play Simon Says</h2>
+                    <button class="close-btn" id="closeHelpBtn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="help-step">
+                        <span class="step-number">1</span>
+                        <p>Watch the sequence of colored buttons that light up</p>
+                    </div>
+                    <div class="help-step">
+                        <span class="step-number">2</span>
+                        <p>Repeat the sequence by clicking the buttons in the same order</p>
+                    </div>
+                    <div class="help-step">
+                        <span class="step-number">3</span>
+                        <p>Each round adds one more button to the sequence</p>
+                    </div>
+                    <div class="help-step">
+                        <span class="step-number">4</span>
+                        <p>Make a mistake and the game ends - try to beat your best score!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
